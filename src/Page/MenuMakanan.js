@@ -11,11 +11,11 @@ class MenuMakanan extends Component{
     tampil:false
   };
     this.pilihPesanan = this.pilihPesanan.bind(this);
-    // this.nasipadang = this.nasipadang.bind(this);
-    // this.sate = this.sate.bind(this);
-    // this.soto = this.soto.bind(this);
-    // this.uduk = this.uduk.bind(this);
-    // this.kuning = this.kuning.bind(this);
+    this.nasipadang = this.nasipadang.bind(this);
+    this.sate = this.sate.bind(this);
+    this.soto = this.soto.bind(this);
+    this.uduk = this.uduk.bind(this);
+    this.kuning = this.kuning.bind(this);
     this.batal = this.batal.bind(this);
   }
 
@@ -24,7 +24,7 @@ pilihPesanan(value,e){
   this.setState({[value]: e.target.value, tampil: true});
 }
 
-nasiPadang(){
+nasipadang(){
   this.setState({
     pesan : "Nasi Padang",
     jumlah : this.state.jumlah + 1,
@@ -87,21 +87,21 @@ batal(){
                       <td>
                         <ListMakanan ListMakananAlamat="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/nasipadang.jpg" />
                         <center>
-                          <button onClick={() => this.nasiPadang()}>Pesan Sekarang</button>
+                          <button onClick={this.nasipadang}>Pesan Sekarang</button>
                         </center>
                       </td>
 
                       <td>
                         <ListMakanan ListMakananAlamat="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sate.png" />
                         <center>
-                          <button onClick={()=>this.sate()}>Pesan Sekarang</button>
+                          <button onClick={this.sate}>Pesan Sekarang</button>
                         </center>
                       </td>
 
                       <td>
                         <ListMakanan ListMakananAlamat="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sotolamongan.png" />
                         <center>
-                          <button onClick={()=>this.soto()}>Pesan Sekarang</button>
+                          <button onClick={this.soto}>Pesan Sekarang</button>
                         </center>
                       </td>
 
