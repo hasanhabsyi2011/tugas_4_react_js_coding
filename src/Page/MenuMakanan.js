@@ -108,14 +108,14 @@ batal(){
                       <td>
                         <ListMakanan ListMakananAlamat="https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/masakan%20nusantara/nasi%20kentut.png" />
                         <center>
-                          <button onClick={()=>this.uduk()}>Pesan Sekarang</button>
+                          <button onClick={this.uduk}>Pesan Sekarang</button>
                         </center>
                       </td>
 
                       <td>
                         <ListMakanan ListMakananAlamat="https://oomphcdn01.sgp1.digitaloceanspaces.com/files/uploads/contributors/ARTICLE_IMAGE_UGC_1077_20208271077_yz3And2qnM.jpg" />
                         <center>
-                          <button onClick={()=>this.kuning()}>Pesan Sekarang</button>
+                          <button onClick={this.kuning}>Pesan Sekarang</button>
                         </center>
                       </td>
                 </tr>
